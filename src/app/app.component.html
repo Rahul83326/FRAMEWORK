@@ -1,0 +1,31 @@
+<mat-toolbar class="mat-elevation-z5">
+<mat-toolbar-row>
+    <span>GCE SALEM</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button><mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">home</mat-icon>
+    </button>
+    <button mat-icon-button><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">settings</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+<mat-nav-list style="width: 200px;">
+    <a mat-list-item routerLink='one' style="height: 65px;"><mat-icon> dashboard</mat-icon>Dashboard</a>
+    <a mat-list-item routerLink='two' style="height: 65px;"><mat-icon> spa</mat-icon>College Details</a>
+    <a mat-list-item style="height: 65px;"><mat-icon> category</mat-icon>Student</a>
+    <a mat-list-item style="height: 65px;"><mat-icon> dns</mat-icon>Department</a>
+    <a mat-list-item style="height: 65px;"><mat-icon> class</mat-icon>Education</a>
+    <a mat-list-item style="height: 65px;"><mat-icon> feedback</mat-icon>Feedback</a>
+</mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <p style="height: 88vh;">
+            <router-outlet></router-outlet>
+        </p>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+  
+  
+  
